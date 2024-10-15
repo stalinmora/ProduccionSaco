@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Telares
+namespace Telares.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddRollo.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddRollo : Window
     {
-        public MainWindow()
+        public AddRollo()
         {
             InitializeComponent();
         }
