@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "Utilidades\Utilidades.csproj", "{52ABB935-78D3-4F61-B612-9EB41821AA1A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ventanas", "Ventanas", "{22EEFC3A-F1B5-461D-BA51-1E61C828D276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telares", "Telares\Telares.csproj", "{AFCF2DBD-C51F-4DEF-B572-40B103679284}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,9 +37,16 @@ Global
 		{52ABB935-78D3-4F61-B612-9EB41821AA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52ABB935-78D3-4F61-B612-9EB41821AA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52ABB935-78D3-4F61-B612-9EB41821AA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCF2DBD-C51F-4DEF-B572-40B103679284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCF2DBD-C51F-4DEF-B572-40B103679284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCF2DBD-C51F-4DEF-B572-40B103679284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCF2DBD-C51F-4DEF-B572-40B103679284}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AFCF2DBD-C51F-4DEF-B572-40B103679284} = {22EEFC3A-F1B5-461D-BA51-1E61C828D276}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A187244-831F-49E2-8180-8F0E1C8FE163}
