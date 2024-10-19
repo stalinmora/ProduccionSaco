@@ -5,22 +5,155 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Telares.Pages"
         mc:Ignorable="d"
-        Title="AddRollo" Height="450" Width="800">
+        Title="Crear Rollo" Height="458" Width="800" ResizeMode="NoResize">
     <Grid>
-        
+
         <Grid Margin="5,5,5,5" Grid.RowSpan="2">
-           
+
             <Grid.RowDefinitions>
-                <RowDefinition Height="90*"/>
+                <RowDefinition Height="60*"/>
                 <RowDefinition Height="120*"/>
+                <RowDefinition Height="20*"/>
             </Grid.RowDefinitions>
 
             <Grid Margin="10" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="23*"/>
+                    <ColumnDefinition Width="7*"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0">
+                    <Grid Margin="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="38*"/>
+                            <RowDefinition Height="47*"/>
+                            <RowDefinition Height="47*"/>
+                        </Grid.RowDefinitions>
 
+                        <Grid Grid.Row="0">
+                            <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.434,-0.095" Height="26" Width="28" Margin="10,0,0,0" FontWeight="Bold"/>
+                            <TextBox HorizontalAlignment="Left" Margin="43,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="92"/>
+                            <Label Content="FECHA : " HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.434,-0.095" Height="26" Width="57" Margin="142,0,0,0" FontWeight="Bold"/>
+                            <DatePicker HorizontalAlignment="Left" Margin="213,0,0,0" VerticalAlignment="Center" Width="115"/>
+                            <Label Content="TURNO : " HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.434,-0.095" Height="26" Width="60" FontWeight="Bold" Margin="344,0,0,0"/>
+                            <ComboBox HorizontalAlignment="Left" Margin="409,0,0,0" VerticalAlignment="Center" Width="143"/>
+                        </Grid>
+
+                        <Grid Grid.Row="1">
+                            <Label Content="CODIGO : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Bold"/>
+                            <Button Content="" HorizontalAlignment="Left" Margin="82,0,0,0" VerticalAlignment="Center" Width="27" Height="26"/>
+                            <TextBox HorizontalAlignment="Left" Margin="112,0,0,0" TextAlignment="Center"  TextWrapping="Wrap" Text="1020304045" VerticalAlignment="Center" Width="80" Height="26"/>
+                            <TextBox Margin="197,0,10,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="26"/>
+
+                        </Grid>
+
+                        <Grid Grid.Row="2">
+                            <Label Content="TELAR : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" FontWeight="Bold"/>
+                            <ComboBox HorizontalAlignment="Left" Margin="78,0,0,0" VerticalAlignment="Center" Width="290"/>
+
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Border Margin="2" Background="LawnGreen" Grid.Column="1">
+
+
+                    <Grid Margin="10,10,10,10" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35*"/>
+                            <RowDefinition Height="67*"/>
+                        </Grid.RowDefinitions>
+                        <Viewbox Grid.Row="0">
+                            <Label Content="KANBAN" FontWeight="Bold"/>
+
+                        </Viewbox>
+                        <Viewbox Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <TextBox TextWrapping="Wrap" Text="120452" TextAlignment="Center" Width="120" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                        </Viewbox>
+
+                    </Grid>
+                </Border>
             </Grid>
 
             <Grid Margin="10" Grid.Row="1">
+                <Border Background="GhostWhite" BorderBrush="Gainsboro" BorderThickness="1">
+                    <TabControl>
+                        <TabItem Header="OPERADORES">
+                            <Grid Background="#FFE5E5E5">
 
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="DETALLES DEL ROLLO">
+                            <Grid Margin="5" Background="#FFE5E5E5">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <GroupBox Header="TELA" Grid.Row="0">
+                                    <Grid Margin="5">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid Grid.Row="0">
+                                            <Label Content="Denier Trama : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="109,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="69"/>
+                                            <Label Content="Color Trama : " HorizontalAlignment="Left" Margin="183,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="272,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="164"/>
+                                            <Label Content="Ancho Cinta Trama : " HorizontalAlignment="Left" VerticalAlignment="Center" Margin="472,0,0,0"/>
+                                            <TextBox HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Width="108" Margin="600,0,0,0"/>
+                                        </Grid>
+
+                                        <Grid Grid.Row="1">
+                                            <Label Content="N° de Franjas : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="109,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="69"/>
+                                            <Label Content="Color Franja : " HorizontalAlignment="Left" Margin="183,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="272,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="164"/>
+                                        </Grid>
+
+
+                                    </Grid>
+
+                                </GroupBox>
+                                <GroupBox Header="CINTA" Grid.Row="1">
+                                    <Grid Margin="5">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="34*"/>
+                                            <RowDefinition Height="33*"/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid Grid.Row="0">
+                                            <Label Content="N° Cintas : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="90,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="78"/>
+                                            <Label Content="Denier Urdimbre : " HorizontalAlignment="Left" Margin="184,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="292,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="78"/>
+                                            <Label Content="Color Urdimbre : " HorizontalAlignment="Left" Margin="386,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="498,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="120"/>
+                                        </Grid>
+
+                                        <Grid Grid.Row="1">
+                                            <Label Content="Ancho de Cinta Urdimbre : " HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="169,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="78"/>
+                                            <Label Content="Ancho de Franja (cm) : " HorizontalAlignment="Left" Margin="267,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox HorizontalAlignment="Left" Margin="394,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="78"/>
+                                            <Label Content="Ubicación de Franja : " HorizontalAlignment="Left" Margin="472,0,0,0" VerticalAlignment="Center"/>
+                                            <TextBox Margin="600,0,10,0" TextWrapping="Wrap" VerticalAlignment="Center"/>
+                                        </Grid>
+
+
+                                    </Grid>
+                                </GroupBox>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+
+                </Border>
+            </Grid>
+
+            <Grid Margin="5" Grid.Row="2">
+                <Button Content="GRABAR" Margin="671,0,10,-1"/>
+
+                <Button Content="CANCELAR" HorizontalAlignment="Left" Margin="544,0,0,-1" Width="99"/>
             </Grid>
 
         </Grid>

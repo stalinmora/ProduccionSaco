@@ -99,6 +99,10 @@
       <Project>{71ad1a27-7038-472a-9fcc-7a3357ec19c0}</Project>
       <Name>Login</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Telares\Telares.csproj">
+      <Project>{afcf2dbd-c51f-4def-b572-40b103679284}</Project>
+      <Name>Telares</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

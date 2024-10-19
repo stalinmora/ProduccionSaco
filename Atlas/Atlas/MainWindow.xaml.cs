@@ -29,7 +29,7 @@ namespace Atlas
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Login.Views.frmLogin a = new Login.Views.frmLogin();
+            Telares.Pages.AddRollo a = new Telares.Pages.AddRollo();
             a.ShowDialog();
         }
 
